@@ -1,0 +1,36 @@
+h2#abouttitle{
+    border-bottom: 5px solid black;
+}
+
+#popup
+{
+    display: none;
+	position: fixed; 
+	top: 50px;
+	left: 300px;
+	background-color: white;
+    padding: 20px;
+	border: 1px solid black;
+	cursor: pointer;
+	z-index: 1000;
+	overflow: auto;
+}
+
+#popup .image
+{
+    max-width: 800px;
+	max-height: 400px;
+}
+
+#popup .close
+            {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1001;
+                font: bold 24px arial, sans-serif;
+                color: #515251;
+                padding: 2px;
+                margin: 2px;
+                cursor: pointer;
+            } 

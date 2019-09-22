@@ -8,6 +8,7 @@ var HTTP_PORT = process.env.PORT || 8080;
 
 app.use(express.static("views"));
 app.use(express.static("data"));
+app.use(express.static("CSS"));
 
 
 function onHttpStart() {
