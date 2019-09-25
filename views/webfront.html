@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- Latest compiled and minified Bootstrap 3.3.7 CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel='stylesheet' href='/siteweb.css' type='text/css'/> 
+      <title>Seven Generation_Eunbee_Kim</title>
+      <script>
+          function imageView(bigImage)
+          {
+            document.querySelector('#popupImage').setAttribute('src', bigImage);
+            document.querySelector('#popup').style.display = 'block';
+            document.querySelector('#popupbg').style.visibility = 'visible';
+            
+          }
+    
+          function imageClose() 
+          {
+            document.querySelector('#popup').style.display = 'none';
+            document.querySelector('#popupbg').style.visibility = 'hidden';
+          }
+        </script>
+    </head>
+	<body>
+            <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                      <!-- Brand and toggle get grouped for better mobile display -->
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <span class="navbar-brand" href="#">Seven Generation</span>
+                      </div>
+                  
+                      <!-- Collect the nav links, forms, and other content for toggling -->
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <ul class="nav navbar-nav">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/interest">Interest</a></li>
+                                <li class="active"><a href="/webfront">Project-WEBSITE</a></li>
+                              </ul>
+                      </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+            </nav>
+	
+		<!-- Top header status bar -->
+		<div class="container">
+
+		<!-- main picture for brand image -->
+
+			<img id="mainpic" src="public/mainpic2.png" width=1500 height=1600 alt="">
+			
+			<main>
+				<p id="menutitle1">PRODUCT</p>
+				<p id="menutitle2">Click the picture to look more detailed </p>
+
+				<div id="pcontrol">
+					<div class="productview">
+						<div class="pr1">
+							<img class="imgr1" src="https://cdn.pixabay.com/photo/2016/10/13/09/37/diffuser-1737193_960_720.jpg" width=300 height=300 alt="Hosanna <br> CAD$20" onclick='imageView("https://cdn.pixabay.com/photo/2016/10/13/09/37/diffuser-1737193_960_720.jpg");'>
+							<p class="imgdesc"><br>Hosanna<br> CAD $20</p>
+						</div>
+						<div class="pr2">
+							<img class="imgr2" src="https://cdn.pixabay.com/photo/2015/12/07/08/51/plastic-bottles-1080430_960_720.jpg" width=300 height=300 alt="" onclick='imageView("https://cdn.pixabay.com/photo/2015/12/07/08/51/plastic-bottles-1080430_960_720.jpg");'>
+							<p class="imgdesc"><br>Aqua Marine<br> CAD $35</p>
+						</div>
+						<div class="pr3">
+							<img class="imgr3" src="https://cdn.pixabay.com/photo/2016/10/25/04/43/essential-oils-1767871_960_720.jpg" width=300 height=300 alt="" onclick='imageView("https://cdn.pixabay.com/photo/2016/10/25/04/43/essential-oils-1767871_960_720.jpg");'>
+							<p class="imgdesc"><br>Ranais<br> CAD $12</p>
+						</div>
+					</div>
+					<div class="productview">
+						<div class="pr1">
+							<img class="imgr1" src="https://cdn.pixabay.com/photo/2015/03/18/05/19/perfume-678828_960_720.jpg" width=300 height=300 alt="" onclick='imageView("https://cdn.pixabay.com/photo/2015/03/18/05/19/perfume-678828_960_720.jpg");'>
+							<p class="imgdesc"><br>Classic Rose<br> CAD $46</p>
+						</div>
+						<div class="pr2">
+							<img class="imgr2" src="https://cdn.pixabay.com/photo/2015/08/25/03/50/aroma-906137_960_720.jpg" width=300 height=300 alt="" onclick='imageView("https://cdn.pixabay.com/photo/2015/08/25/03/50/aroma-906137_960_720.jpg");'>
+							<p class="imgdesc"><br>Green <br> CAD $18</p>
+						</div>
+						<div class="pr3">
+							<img class="imgr3" src="https://cdn.pixabay.com/photo/2016/06/02/12/29/scent-1431057_960_720.jpg" width=300 height=300 alt="" onclick='imageView("https://cdn.pixabay.com/photo/2016/06/02/12/29/scent-1431057_960_720.jpg");'>
+							<p class="imgdesc"><br>Hydragea<br> CAD $10</p>
+						</div>
+					</div>
+					<div class="productview">
+						<div class="pr1">
+							<img class="imgr1" src="https://cdn.pixabay.com/photo/2019/04/23/06/10/perfume-4148638_960_720.jpg" width=300 height=300 alt="" onclick='imageView("https://cdn.pixabay.com/photo/2019/04/23/06/10/perfume-4148638_960_720.jpg");'>
+							<p class="imgdesc"><br>Ballon flower<br> CAD $7</p>
+						</div>
+						<div class="pr2">
+							<img class="imgr2" src="https://cdn.pixabay.com/photo/2019/04/06/19/22/glass-4108085_960_720.jpg" width=300 height=300 alt="" onclick='imageView("https://cdn.pixabay.com/photo/2019/04/06/19/22/glass-4108085_960_720.jpg");'>
+							<p class="imgdesc"><br>Cherry Blossom & baby's breath <br> CAD $45</p>
+						</div>
+						<div class="pr3">
+							<img class="imgr3" src="https://cdn.pixabay.com/photo/2016/06/03/16/24/perfume-1433727_1280.jpg" width=300 height=300 alt="" onclick='imageView("https://cdn.pixabay.com/photo/2016/06/03/16/24/perfume-1433727_1280.jpg");'>
+							<p class="imgdesc"><br>Water Lily I<br> CAD $80</p>
+						</div>
+					</div>
+					<div class="productview">
+						<div class="pr1">
+							<img class="imgr1" src="https://cdn.pixabay.com/photo/2016/06/03/16/20/perfume-1433720_960_720.jpg" width=300 height=300 alt="" onclick='imageView("https://cdn.pixabay.com/photo/2016/06/03/16/20/perfume-1433720_960_720.jpg");'>
+							<p class="imgdesc"><br>Water Lily II<br> CAD $85</p>
+						</div>
+						<div class="pr2">
+							<img class="imgr2" src="https://cdn.pixabay.com/photo/2015/01/23/04/53/perfume-608732_960_720.jpg" width=300 height=300 alt="" onclick='imageView("https://cdn.pixabay.com/photo/2015/01/23/04/53/perfume-608732_960_720.jpg");'>
+							<p class="imgdesc"><br>Memoria<br> CAD $21~35</p>
+						</div>
+						<div class="pr3">
+							<img class="imgr3" src="https://cdn.pixabay.com/photo/2018/08/29/14/47/perfume-3640056_1280.jpg" width=300 height=300 alt="" onclick='imageView("https://cdn.pixabay.com/photo/2018/08/29/14/47/perfume-3640056_1280.jpg");'>
+							<p class="imgdesc"><br>YSL<br> CAD $20</p>
+						</div>
+					</div>
+				</div>
+
+				<div id=popup>
+					<img id=popupImage src='close.png' alt='Loading...' class=image>
+					<p id="caption">
+						Order_Qty: 
+						<select name="quantity" id="quantity">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<button type="button" class="buttonp">Cart</button>
+						<button type="button" class="buttonp">Pay</button>
+					</p>
+					<div class=close onclick='imageClose();'>&nbsp;X&nbsp;</div>
+				</div>
+					
+				<div id="reference">All picture right from https://pixabay.com</div>
+			</main>
+			<footer>
+			name: Eunbee Kim <br>email:eunbeek@outlook.com <br>phone: 437-988-1678
+			</footer>
+        </div>
+         <!-- Latest compiled and minified jQuery 3.2.1 JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap 3.3.7 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	</body>
+</html>
+
