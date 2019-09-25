@@ -7,7 +7,7 @@ h2#abouttitle{
     display: none;
 	position: fixed; 
 	top: 50px;
-	left: 300px;
+	left: 100px;
 	background-color: white;
     padding: 20px;
 	border: 1px solid black;
@@ -17,8 +17,8 @@ h2#abouttitle{
 }
 
 #popup .image
-{
-    max-width: 800px;
+{8
+    max-width: 600px;
 	max-height: 400px;
 }
 
