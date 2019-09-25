@@ -2,7 +2,7 @@
 var express = require("express");
 var app = express();
 var path = require("path");
-
+var info = require("./info.js");
 
 var HTTP_PORT = process.env.PORT || 8080;
 
@@ -32,6 +32,13 @@ app.get("/webfront", function(req,res){
   res.sendFile(path.join(__dirname, "/views/webfront.html"));
 });
 
+app.get("/info", function(req,res){
+  res.sendFile(path.join(__dirname, "/views/info.html"));
+});
+
+app.get("/honesty", function(req,res){
+  res.sendFile(path.join(__dirname, "/views/honesty.html"));
+});
 app.use(function(req, res) {
   res.status(404).sendFile(path.join(__dirname, "/views/error.html"));
   res.status(400).sendFile(path.join(__dirname, "/views/error.html"));

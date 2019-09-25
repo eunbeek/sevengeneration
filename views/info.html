@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- Latest compiled and minified Bootstrap 3.3.7 CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="/info.css" type="text/css" />
+      <title>Seven Generation_Eunbee_Kim</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand" href="#">Seven Generation</span>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about">About</a></li>
+                  <li><a href="/interest">Interest</a></li>
+                  <li><a href="/webfront">Project-WEBSITE</a></li>
+                  <li class="active"><a href="/honesty">Project-Login</a></li>
+                </ul>
+                <!-- <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Interest</a></li>
+                </ul> -->
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="containerlogin">
+            <header>
+                    <img src="public/logo1.png" alt="" width="100" height="80"/>
+                    <div><a class="menu" href="/honesty">Small bee Comb</a></div>
+                </header>
+                
+                    <!-- Section 1 Start -->
+                    <aside class="asidenav">
+                        <nav>
+                            <ul>
+                                <li><a class="menu" href="#">NEW</a></li>
+                                <li><a class="menu" href="#">SALE</a></li>
+                                <li><a class="menu" href="#">BASIC</a></li>
+                                <li class="menu">My Page
+                                    <ul>
+                                        <li><a class="menu" href="/info">Sign up</a></li>
+                                        <li><a class="menu" href="#">login</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <!-- Section 1 End -->
+    
+                    <!-- Section 2 Start -->
+                    <section class="info">
+                        <article>
+                            <form name="signup" method="post" action="https://httpbin.org/post" onsubmit="return formValidation();" style ="width:80%;">
+                                <fieldset>
+                                    <legend>Personal Information</legend>
+                                        <!-- info B -->
+                                        <label>First Name </label>
+                                            <input type="text" name="Fisrtname" required/>
+                                            <span class="errorm" id="ferr"></span><br/>
+                                        <!-- info C -->
+                                        <label>Last Name </label>
+                                            <input type="text" name="Lastname" required/>
+                                            <span class="errorm" id="lerr"></span><br/>
+                                        <label>Birth</label>
+                                            <select name="birthYear" size="1">
+                                                <option value="1989">1989</option>
+                                                <option value="1990">1990</option>
+                                                <option value="1991">1991</option>
+                                                <option value="1992" selected>1992</option>
+                                                <option value="1993">1993</option>
+                                                <option value="1994">1994</option>
+                                                <option value="1995">1995</option>
+                                                <option value="1996">1996</option>
+                                                <option value="1997">1997</option>
+                                                <option value="1998">1998</option>
+                                                <option value="1999">1999</option>
+                                                <option value="2000">2000</option>
+                                            </select>
+                                            <select name="birthMonth" size="1" style="margin-left:9px;">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7" selected>7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <select name="birthDay" size="1" style="margin-left:9px;">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15" selected>15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option> 
+                                                <option value="21">21</option> 
+                                                <option value="22">22</option> 
+                                                <option value="23">23</option> 
+                                                <option value="24">24</option> 
+                                                <option value="25">25</option> 
+                                                <option value="26">26</option> 
+                                                <option value="27">27</option> 
+                                                <option value="28">28</option> 
+                                                <option value="29">29</option> 
+                                                <option value="30">30</option> 
+                                                <option value="31">31</option> 
+                                            </select>
+                                        <!-- info I -->
+                                        <br/>
+                                        <label>Age</label>
+                                            <input type="number" name="Age" required/>
+                                            <span class="errorm" id="Aerr"></span><br/>
+                                        
+                                        <!-- info H -->
+                                        <label>Email</label>
+                                            <input type="email" name="email" placeholder="xxx@gmail.com" required/><br/>
+                                        
+                                        <!-- info F -->
+                                        <label>Education Level</label>
+                                            <select name="EducationLevel" size="1" style="width:160px;">
+                                                <option value="0" selected>Select</option>
+                                                <option value="1">Technical Diploma</option>
+                                                <option value="2">College Diploma</option>
+                                                <option value="3">Bacelor's Degree</option>
+                                                <option value="4">Master's Degree</option>
+                                                <option value="5">Others</option>
+                                            </select>
+                                        <span class="errorm" id="Eduerr"></span>
+                                        <br/>
+                                        <!-- info G -->
+                                        <label>Education Status</label>
+                                            <input type="radio" name="status" value="graduated" checked/>Graduated 
+                                            <input type="radio" name="status" value="current"/>Current enrolled
+                                            <input type="radio" name="status" value="notgraduate"/>Did not graduate<br/>
+                                            
+                                    </fieldset>
+                                    <br/>
+                                    <fieldset>
+                                        <legend> Account Information</legend>
+                                            <!-- info E -->
+                                            <label>User Name </label>
+                                                <input type="text" name="Username" required/>
+                                                <span class="errorm" id="Nameerr"></span><br/>
+                                            <!-- info D -->
+                                            <label>Password</label>
+                                                <input type="password" name="password" required/>
+                                                <span class="errorm" id="pwderr"></span><br/>
+                                            <label>Confirm Password</label>
+                                                <input type="password" name="confirmPassword" required/>
+                                                <span class="errorm" id="cpwderr"></span>
+                                    </fieldset>
+                                    <br/>
+                                    <!-- info L -->
+                                    <input type="hidden" name="lastName" id="lastName" value="Kim" />
+                                    <input type="hidden" name="studentId" id="studentId" value="139810188" />
+    
+                                    <input type="submit" id="submitb" value="submit" style="margin-left:5px;"/>
+                                    <input type="reset" id="resetb" value="reset" style="margin-left:5px;" onclick="clearerror()"/>
+                            </form>
+                        </article>
+                    </section>
+                    <!-- Section 2 End -->
+    
+                    <!-- Section 3 Start -->
+                    <section class="ads">
+                        <img src="public/Adsedit.png" alt="" width="190" height ="370"/>
+                    </section>
+
+    </div>
+    <!-- Latest compiled and minified jQuery 3.2.1 JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap 3.3.7 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

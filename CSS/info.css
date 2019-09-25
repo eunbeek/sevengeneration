@@ -1,0 +1,147 @@
+/* BODY Background color */
+
+
+/* Entire size*/
+.containerlogin { 
+	width: 1100px;
+    margin: 0 auto; 
+    background: #E7E5E3;
+	}
+
+
+/* header */
+.containerlogin header {
+	width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #26201A;
+	padding: 10px 0;
+	font-family: "Aharoni", Tahoma;
+	background: white;
+}
+	
+/* Aside 1 */
+.containerlogin .asidenav { 
+	width: 190px; 
+	height: 390px;
+	float: left; 
+	border: 1px solid #26201A;
+	margin: 10px 15px 10px 0;
+	background: white;
+}
+
+.containerlogin .menu {
+	color: #515251;
+	text-decoration: none;
+}
+
+.containerlogin .menu:hover {
+		color: #D0837F;
+}
+
+.containerlogin nav ul {
+	margin: 0 auto;
+	list-style-type : none;
+	font-size : 13pt;
+	font-family : "Aharoni", Tahoma;
+}
+
+.containerlogin nav ul li {
+	padding: 10px;
+	text-decoration : none;
+	
+}
+.containerlogin nav ul li ul {
+	position : absolute;
+	display : none;
+	opacity : 0;
+	visibility : hidden;
+	transition : opacity 0.1s;
+	
+}
+
+.containerlogin nav ul li:hover ul {
+	display : block;
+	text-align : left;
+	opacity : 0.8;
+	visibility : visible;
+	background : #F1F1F1;
+	padding: 0;
+}
+.containerlogin nav ul li ul li {
+	display : block;
+	text-align : left;
+	color : #515251;
+	font-size : 13pt;
+	font-family : "Aharoni", Tahoma;
+}
+	
+/* Main */	
+.containerlogin .main {
+	width: 680px; 
+	height: 390px;
+	float: left; 
+	border: 1px solid #26201A;
+	margin-top: 10px;
+	padding-left: 4px;
+	font-family : "Aharoni", Tahoma;
+	background: white;
+	white-space: normal;
+	}
+
+/* info */
+.containerlogin .info {
+	width: 680px; 
+	height: 460px;
+	float: left; 
+	border: 1px solid #26201A;
+	background: white;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	font-family : "Aharoni", Tahoma;
+}
+.containerlogin label {
+        display: inline-block;
+        width: 150px;
+        text-align: left;
+	  }
+	  
+.containerlogin input, select {
+	margin-left: 20px;
+}
+
+.containerlogin .errorm { 
+	color: red; 
+	font-family : "Aharoni", Tahoma;
+	font-size: 10px;
+
+}
+
+.containerlogin #submitb, #resetb{
+	color: white;
+	font-family : "Aharoni", Tahoma;
+	background: #D0837F;
+}
+/* Aside 2 */
+.containerlogin .ads { 
+	width: 192px; 
+	height: 370px;
+	float: left; 
+	border: 1px solid #26201A;
+	margin: 10px 0 0 15px;
+	}
+
+/* Footer */
+.containerlogin footer {
+	clear: both;
+	width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #26201A;
+	background: #D0837F;
+	padding: 8px 0;
+	font-family : "Aharoni", Tahoma;
+	font-size: 15px;
+	color: white;
+}
