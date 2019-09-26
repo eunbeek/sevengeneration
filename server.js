@@ -4,6 +4,7 @@ var app = express();
 var path = require("path");
 var info = require("./info.js");
 
+
 var HTTP_PORT = process.env.PORT || 8080;
 
 app.use(express.static("views"));
@@ -39,6 +40,13 @@ app.get("/info", function(req,res){
 app.get("/honesty", function(req,res){
   res.sendFile(path.join(__dirname, "/views/honesty.html"));
 });
+
+// app.get("/submit", function(req,res)
+// {
+//   res.send("Success").then(() => {res.sendFile(path.join(__dirname,"/views/index.html"))}).catch((err) => {res.sendFile(path.join(__dirname,"/views/index.html"))});
+
+// });
+
 app.use(function(req, res) {
   res.status(404).sendFile(path.join(__dirname, "/views/error.html"));
   res.status(400).sendFile(path.join(__dirname, "/views/error.html"));

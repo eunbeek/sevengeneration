@@ -193,6 +193,7 @@ function validatePassword(){
 }
 
 function clearerror(){
+	console.log("work!");
 	 document.querySelector(".errorm").innerHTML = "";
 }
 
