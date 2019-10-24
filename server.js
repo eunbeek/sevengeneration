@@ -3,13 +3,32 @@ var express = require("express");
 var app = express();
 var path = require("path");
 var info = require("./info.js");
-
+const Sequelize = require('sequelize');
 
 var HTTP_PORT = process.env.PORT || 8080;
 
 app.use(express.static("views"));
 app.use(express.static("data"));
 app.use(express.static("CSS"));
+
+var sequelize = new Sequelize('d5chnpfpodj8pd', 'zyzckazjznaqsr', 'fdabd3ca038118f8b71e90ebc9981eb08dcd0fc34066cebf632f0bce34995742', {
+  host: 'ec2-107-20-167-241.compute-1.amazonaws.com',
+  dialect: 'postgres',
+  port: 5432,
+  dialectOptions: {
+      ssl: true
+  }
+});
+
+sequelize
+  .authenticate()
+  .then(function() {
+      console.log('Connection has been established successfully.');
+  })
+  .catch(function(err) {
+      console.log('Unable to connect to the database:', err);
+  });
+
 
 
 function onHttpStart() {
@@ -41,11 +60,14 @@ app.get("/honesty", function(req,res){
   res.sendFile(path.join(__dirname, "/views/honesty.html"));
 });
 
-// app.get("/submit", function(req,res)
-// {
-//   res.send("Success").then(() => {res.sendFile(path.join(__dirname,"/views/index.html"))}).catch((err) => {res.sendFile(path.join(__dirname,"/views/index.html"))});
+app.get("/allcustomer", function(req,res)
+{
 
-// });
+});
+app.post("/submit", function(req,res)
+{
+  res.redirect("/info");
+});
 
 app.use(function(req, res) {
   res.status(404).sendFile(path.join(__dirname, "/views/error.html"));
